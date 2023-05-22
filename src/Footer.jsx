@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export default function Footer(){
+export default function Footer() {
     return (
-        <Count>
-            <span>0/4 Concluídos</span>            
+        <Count data-test="footer" >
+            <span>0/4 Concluídos</span>
         </Count>
     )
 }
@@ -21,6 +21,6 @@ const Count = styled.div`
     align-items: center;
     position: fixed;
     left: 0px;
-  bottom: 0px;
+     bottom: 0px;
     z-index: 5;
 `
