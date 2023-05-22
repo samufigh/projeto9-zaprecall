@@ -2,14 +2,20 @@ import styled from 'styled-components';
 import Header from './Header';
 import Deck from './Deck';
 import Footer from './Footer';
+import { useState } from "react";
 
 export default function App() {
+    const [counter, setCounter] = useState(0);
+
     return (
 
             <Container>
                 <Header />
-                <Deck />
-                <Footer />
+                <Deck 
+                    counter={counter} 
+                    setCounter={setCounter}/>
+                <Footer 
+                    counter={counter}/>
             </Container>
     )
 }
